@@ -20,5 +20,7 @@ This page contains a graph on the amount of subway lines in selected cities. You
 
 Below is an interactive artwork of a swimming fish. Click on either the 'start' or 'stop' to control the fish's movement, and click on 'change color' to see the fish be drawn again in a different color.
 
-
+## Cat
 My contact information is at the end of both pages.
+
+The cat on about page is created by me in Adobe AE.
