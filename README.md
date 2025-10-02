@@ -6,7 +6,7 @@ This website is designed as a personal portfolio for Elizabeth Liao.
 Created in HTML, CSS, and JavaScript.
 
 
-About Page
+## About Page
 
 
 This page contains information about my education, courses I've taken related to design or programming, and projects I've completed over the past year.
@@ -14,7 +14,7 @@ This page contains information about my education, courses I've taken related to
 All images in the project section are click-able to see the images change.
 
 
-Visualizations Page
+## Visualizations Page
 
 This page contains a graph on the amount of subway lines in selected cities. You can hover over each bar to see the specific number.
 
