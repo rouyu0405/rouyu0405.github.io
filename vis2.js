@@ -78,7 +78,7 @@ fetchData().then(async (data) => {
     .encode(
       vl.x().fieldN("Platform"),
       vl.y().fieldN("Region").title("Total Sales (millions)"),
-      vl.color().fieldQ("Sales").aggregate("sum").title("Region"),
+      vl.color().fieldQ("Sales").aggregate("sum").title("Sales"),
       vl.tooltip([
         vl.fieldN("Region"),
         vl.fieldN("Platform"),
