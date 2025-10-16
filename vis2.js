@@ -1,6 +1,6 @@
 //*************************** Assignment 3 ***************************//
 async function fetchData() {
-  const data = await d3.csv("videogames_wide.csv");
+  const data = await d3.csv("A3/videogames_wide.csv");
   return data;
 }
 
