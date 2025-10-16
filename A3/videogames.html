@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        
+        <!-- Vega & Vega-Lite Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-lite-api@5.6.0"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-tooltip"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+        <script>
+            const options = {
+                config: {
+                    // Vega-Lite default configuration
+                },
+                init: (view) => {
+                    // initialize tooltip handler
+                    view.tooltip(new vegaTooltip.Handler().call);
+                },
+                view: {
+                    // view constructor options
+                    // remove the loader if you don't want to default to vega-datasets!
+                    loader: vega.loader({
+                        baseURL: "https://cdn.jsdelivr.net/npm/vega-datasets@2/",
+                    }),
+                    renderer: "canvas",
+                },
+            };
+
+            // register vega and vega-lite with the API
+            vl.register(vega, vegaLite, options);
+        </script>
+
+        <title>Elizabeth Liao</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap&
+		family=Klee+One&display=swap&" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                <a href="/">Elizabeth L</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">ABOUT</a></li>
+                    <li><a href="visualizations.html">VISUALIZATIONS</a></li>
+                    <li><a href="/" class="selected">VIDEO GAME</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="title">
+            <h1>Video Game Sales Visualizations</h1>
+        </div>
+
+        <!--***********************************ASSIGNMENT 3***************************************-->
+        <section id="videogames">
+            <div class="explinations">
+                <h4>The Dataset</h4>            
+                <p>1. Name: The title of the video game.</p>
+                <p>2. Platform: The gaming platform on which the game was released (e.g., Wii, NES).</p>
+                <p>3. Year: The year the game was released.</p>    
+                <p>4. Genre: The genre of the video game (e.g., Sports, Platform, Racing).</p>    
+                <p>5. Publisher: The publisher of the game (e.g., Nintendo).</p>    
+                <p>6. NA_Sales: Sales in North America (in millions of units).</p>    
+                <p>7. EU_Sales: Sales in Europe (in millions of units).</p>   
+                <p>8. JP_Sales: Sales in Japan (in millions of units).</p>
+                <p>9. Other_Sales: Sales in other regions (in millions of units).</p>
+                <p>10. Global_Sales: Total global sales (in millions of units).</p> 
+            </div>
+    
+            <h3 class="title"># 1: Global Sales by Genre and Platform</h3>
+            <div id="globalSalesChart" class="chart"></div>
+            <h3 class="title"># 2: Sales Over Time by Platform and Genre</h3>
+            <div id="salesOverTimeChart" class="chart"></div>
+            <h3 class="title"># 3: Regional Sales vs. Platform</h3>
+            <div id="regionalSalesChart" class="chart"></div>
+            <h3 class="title"># 4: Regional Sales Over Time by Genre</h3>
+            <div id="vizChart" class="chart"></div>
+
+        </section>
+
+        <!--******************Contact*****************-->
+		<section>
+			<div class="footer-container">
+				<h4>@2025</h4>
+                <div>
+                    <p>Find me on LinkedIn:</p>
+                    <p>elizabethlizliao@linkedin</p>
+                </div>
+                <div>
+                    <p>Email me at:</p>
+                    <p>ela112@sfu.ca</p>
+                </div>
+		</section>
+    </body>
+    <script src="./vis.js" type="text/javascript"></script>
+</html>
