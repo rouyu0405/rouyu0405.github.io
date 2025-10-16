@@ -303,3 +303,23 @@ hr.line {
 	padding: 10px 16px;
 	color: white;
 }
+/*-------------------------------------ASSIGNMENT 3----------------------------------------*/
+.explinations p{
+	display: flex;
+	justify-content: left;
+	margin-left: 80px
+}
+.explinations h4{
+	display: flex;
+	justify-content: left;
+	margin-left: 80px
+}
+
+#globalSalesChart,
+#salesOverTimeChart,
+#regionalSalesChart,
+#vizChart {
+	display: flex;
+	justify-content: center;
+	margin-top: -60px;
+}
